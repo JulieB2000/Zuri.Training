@@ -1,0 +1,596 @@
+* {
+ padding: 0;
+ margin: 0;
+ text-decoration: none;
+ list-style: none;
+ box-sizing: border-box;
+}
+
+:root {
+ --main-bg-color: #f1efe8;
+ --font-color: #514949;
+ --font-fallback: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+  "Helvetica Neue", sans-sans;
+ --text-color: #fff;
+ --border-color: #e7332b;
+}
+
+body {
+ background-color: var(--main-bg-color);
+ color: var(--font-color);
+ font-family: var(--font-fallback)
+}
+
+
+header {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 10px 4rem;
+}
+
+h2 {
+ font-size: 27px;
+}
+
+
+.dot {
+ font-size: 50px;
+ color: var(--border-color);
+}
+
+
+.links {
+ display: flex;
+ margin-left: 550px;
+}
+
+.links a {
+ font-size: 1.2rem;
+ padding: 10px 0;
+ margin: 0 26px;
+ color: #808080;
+ font-weight: 500;
+}
+
+
+.zuri-training {
+ font-size: 1.2rem;
+ font-weight: 600;
+ border: 1px solid var(--border-color);
+ padding: 6px 10px 10px 10px;
+ color: var(--text-color);
+ background-color: var(--border-color);
+ margin-right: 30px;
+}
+
+.zuri-training:hover {
+ background-color: var(--text-color);
+ color: var(--border-color);
+}
+
+.menu-icon {
+ color: var(--border-color);
+ font-size: 28px;
+ margin-left: 10px;
+ cursor: pointer;
+ z-index: 10001;
+ display: none;
+}
+
+.main {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ padding: 80px 5%;
+}
+
+.content {
+ max-width: 540px;
+}
+
+.text {
+ font-size: 46px;
+ font-weight: 400;
+ line-height: 3rem;
+}
+
+.iff-logo {
+ width: 200px;
+}
+
+div>p {
+ line-height: 1.7rem;
+ font-weight: 500;
+ font-size: large;
+ padding-top: 10px;
+}
+
+.first-child {
+ color: #000;
+ padding-top: 30px;
+}
+
+.enroll-today {
+ font-weight: 100;
+ border: 1px solid var(--border-color);
+ padding: 0 4px 6px 0;
+ margin: 35px 25rem 0 0;
+ background-color: var(--border-color);
+ color: var(--text-color);
+ text-align: center;
+
+}
+
+.zuri-photos {
+ margin: -20px 0 0 120px;
+ height: 550px;
+}
+
+
+.main-2 {
+ margin-left: 4%;
+}
+
+.scope {
+ color: var(--border-color);
+}
+
+div .curriculum {
+ display: flex;
+}
+
+.curriculum p:first-of-type {
+ font-size: 28px;
+ font-weight: bolder;
+ padding: 20px 0;
+}
+
+.curriculum p:nth-child(2) {
+ border: 1px solid var(--border-color);
+ padding-left: 15px;
+ padding-right: 15px;
+ color: var(--text-color);
+ background-color: var(--border-color);
+ margin: 5px 0 10px 25rem;
+ text-align: center;
+
+}
+
+.main-3 {
+ margin-left: 4rem;
+ margin-right: 3rem;
+}
+
+h3 {
+ font-size: 22px;
+}
+
+.tech {
+ display: inline-block;
+ padding: 40px 23px 0px 23px;
+ border: 1px gray;
+ width: 31%;
+ height: 340px;
+ margin: 50px 0 0 23px;
+ background-color: var(--text-color);
+ border-radius: 5px;
+}
+
+.tech p {
+ font-size: large;
+ margin-top: 10px;
+ font-weight: 500;
+ color: rgb(86, 79, 79);
+}
+
+.divider {
+ border-bottom: 1px solid;
+ margin: 30px 0 15px 0;
+}
+
+.vertical {
+ display: flex;
+}
+
+.vl {
+ border-left: 2px solid;
+ height: 17px;
+ margin: 25px 5px 0 5px;
+}
+
+.ri-pushpin-2-fill {
+ float: right;
+ font-size: 15px;
+}
+
+.inner-div {
+ background-color: var(--text-color);
+ height: 100vh;
+ margin-top: 80px;
+ display: grid;
+ justify-content: center;
+ align-items: center;
+}
+
+.black {
+ height: 70vh;
+ width: 90vw;
+ background-color: black;
+ margin-top: 1%;
+
+}
+
+.black h2 {
+ color: var(--text-color);
+ display: grid;
+ justify-content: center;
+ align-items: center;
+ margin-top: 27vh;
+}
+
+
+.black p {
+ padding: 12px;
+ color: var(--text-color);
+ border: 1px solid var(--border-color);
+ display: grid;
+ justify-content: center;
+ align-items: center;
+ margin: 15px 36rem 0 36rem;
+ background-color: var(--border-color);
+
+}
+
+.info {
+ display: flex;
+ justify-content: space-between;
+}
+
+.link {
+ display: grid;
+}
+
+.link a {
+ padding: 15px 0;
+ color: var(--border-color);
+}
+
+.info h2 {
+ padding: 0 3rem;
+}
+
+.address {
+ padding-left: 10rem;
+}
+
+.follow-us {
+ padding-right: 13rem;
+}
+
+.address a {
+ line-height: 3rem;
+ color: var(--border-color);
+}
+
+.follow-us i {
+ font-size: 1.4em;
+ padding-right: 8px;
+ margin-top: 1rem;
+}
+
+.contact {
+ font-weight: bold;
+}
+
+@media(max-width: 1090px) {
+
+ header {
+  display: flex;
+  padding: 0 0 0 6px;
+  margin-left: 10px;
+ }
+
+ .links {
+  margin-left: 0;
+ }
+
+ .menu-icon {
+  display: block;
+ }
+
+ .links {
+  position: absolute;
+  top: 15%;
+  left: -100%;
+  width: 230px;
+  height: 29vh;
+  display: flex;
+  flex-direction: column;
+
+ }
+
+ .links a {
+  display: block;
+  padding: 15px 0px;
+  color: var(--border-color);
+
+ }
+
+ .zuri-training {
+  position: absolute;
+  top: 41%;
+  left: -100%;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .links.open {
+  left: 0;
+ }
+
+ .zuri-training.open {
+  left: 3.5%;
+ }
+
+ .main {
+  display: grid;
+  grid-template-columns: none;
+  padding: 6rem 5%;
+ }
+
+ .content {
+  max-width: none;
+  line-height: 3rem;
+ }
+
+ .content.open {
+  top: 30rem;
+ }
+
+ div>p {
+  line-height: 1.7rem;
+  font-weight: 500;
+  font-size: large;
+  padding-top: 10px;
+ }
+
+ .enroll-today {
+  padding: 0 4px 6px 0;
+  text-align: center;
+  margin: 0 37rem 0 0;
+ }
+
+ .zuri-photos {
+  margin: 4rem 10px 0 5px;
+  height: 44rem;
+ }
+
+
+ .main-2 {
+  margin-left: 4%;
+ }
+
+ .scope {
+  margin-top: 6rem;
+ }
+
+ div .curriculum {
+  display: block;
+
+ }
+
+ .curriculum p:first-of-type {
+  font-size: 27px;
+  font-weight: 600;
+ }
+
+ .curriculum p:nth-child(2) {
+  padding: 0.7rem 0 0.7rem 0;
+  margin-left: 0;
+  margin-right: 37rem;
+  text-align: center;
+ }
+
+ .main-3 {
+  margin-left: 2rem;
+  margin-right: 0;
+  margin-top: 5rem;
+ }
+
+ h3 {
+  font-size: 22px;
+ }
+
+ .tech {
+  display: grid;
+  padding: 40px 23px 0px 23px;
+  border: 1px gray;
+  width: 95%;
+  height: 290px;
+  margin: 50px 0 0 0;
+
+ }
+
+
+ .tech p {
+  font-size: large;
+  margin-top: 0;
+  font-weight: 500;
+  color: rgb(86, 79, 79);
+  margin-bottom: 0;
+ }
+
+ .divider {
+  border-bottom: 1px solid;
+  margin: 0 0 5px 0;
+ }
+
+ .vertical {
+  display: flex;
+ }
+
+ .vl {
+  height: 17px;
+  margin: 16px 5px 0 5px;
+
+ }
+
+ .inner-div {
+  margin-top: 70px;
+  height: 160vh;
+ }
+
+ .black {
+  width: 100vw;
+ }
+
+ .black p {
+  padding: 12px;
+  margin: 15px 21rem 0 21rem;
+ }
+
+ .info {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+
+ .link {
+  margin-top: 2rem;
+ }
+
+
+ .link a {
+  padding: 13px 0;
+  font-weight: 500;
+ }
+
+ .info h2 {
+  padding: 0 0rem;
+ }
+
+
+ .address {
+  padding-left: 0;
+  margin-top: 3rem;
+ }
+
+
+ .address a {
+  font-size: 18px;
+  font-weight: 500;
+ }
+
+ .follow-us {
+  padding-right: 0;
+  margin-top: 3rem;
+ }
+
+
+ .follow-us i {
+  padding-right: 0;
+  margin-left: 1rem;
+ }
+
+}
+
+
+@media(max-width: 550px) {
+
+ header {
+  display: flex;
+  padding: 0 0 0 6px;
+  margin-left: 10px;
+ }
+
+ .links {
+  margin-left: 0;
+ }
+
+ .menu-icon {
+  display: block;
+  margin-right: 2rem;
+ }
+
+ .links {
+  position: absolute;
+  top: 15%;
+  left: -100%;
+  width: 230px;
+  height: 29vh;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .links a {
+  display: block;
+  padding: 15px 0px;
+  color: var(--border-color);
+ }
+
+ .zuri-training {
+  position: absolute;
+  top: 41%;
+  left: -100%;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .links.open {
+  left: 0;
+ }
+
+ .zuri-training.open {
+  left: 3.5%;
+ }
+
+ .main {
+  display: grid;
+  grid-template-columns: none;
+ }
+
+ .content {
+  max-width: 440px;
+ }
+
+ .enroll-today {
+  margin-right: 18rem;
+
+ }
+
+ .zuri-photos {
+  height: 28rem;
+ }
+
+ div .curriculum {
+  display: block;
+
+ }
+
+ .curriculum p:nth-child(2) {
+  margin-right: 19rem;
+ }
+
+ .black h2 {
+  padding: 0 1rem;
+ }
+
+ .black p {
+  margin: 15px 11rem 0 11rem;
+ }
+
+
+ .follow-us {
+  padding-right: 0;
+  margin-top: 3rem;
+  margin-left: 0rem;
+ }
+
+
+ .follow-us i {
+  padding-right: 0;
+  margin-left: 1.5rem;
+ }
+
+}
